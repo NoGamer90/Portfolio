@@ -1,0 +1,202 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:white;
+line-height:1.6;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#161b22;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d4ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+padding:80px 8%;
+min-height:100vh;
+}
+
+.text{
+flex:1;
+min-width:300px;
+}
+
+.text h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.text span{
+color:#00d4ff;
+}
+
+.text h3{
+margin-bottom:20px;
+}
+
+.text p{
+margin-bottom:25px;
+}
+
+.image{
+flex:1;
+text-align:center;
+min-width:300px;
+}
+
+.image img{
+width:300px;
+height:300px;
+border-radius:50%;
+border:5px solid #00d4ff;
+object-fit:cover;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#00d4ff;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+section{
+padding:80px 8%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#00d4ff;
+font-size:36px;
+}
+
+.box{
+background:#161b22;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,212,255,.3);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161b22;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+box-shadow:0 0 10px rgba(255,255,255,.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00d4ff;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+#contact .box p{
+margin:15px 0;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#161b22;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.text h1{
+font-size:36px;
+}
+
+.image img{
+width:220px;
+height:220px;
+margin-bottom:30px;
+}
+nav a.active{
+color:#00d4ff;
+font-weight:bold;
+}
+  }

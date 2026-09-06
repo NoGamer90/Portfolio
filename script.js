@@ -107,6 +107,22 @@ topButton.addEventListener("click", () => {
 
 });
 
+setInterval(() => {
+    const p = document.createElement("span");
+
+    p.className = "particle";
+    p.innerHTML = "🌸";
+
+    p.style.left = Math.random() * 100 + "vw";
+    p.style.animationDuration = (4 + Math.random() * 5) + "s";
+
+    document.getElementById("particles").appendChild(p);
+
+    setTimeout(() => {
+        p.remove();
+    }, 9000);
+}, 300);
+
 window.onload = () => {
     console.log("Welcome to Akash's Portfolio!");
 };

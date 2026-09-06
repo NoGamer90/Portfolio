@@ -211,3 +211,32 @@ color:#00d4ff;
 font-weight:bold;
 }
   }
+#particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    color: #ffb7c5;
+    font-size: 18px;
+    animation: fly 6s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(110vh) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10vh) translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}

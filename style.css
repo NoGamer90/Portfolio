@@ -6,27 +6,27 @@ font-family:Arial, sans-serif;
 scroll-behavior:smooth;
 }
 
-body{
-background:#0d1117;
-color:white;
-line-height:1.6;
-}
-
 /* Light Mode (default) */
 :root {
-    background: #ffffff;
-    color: #222222;
-    button-bg: #222222;
-    button-text: #ffffff;
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --button-bg: #222222;
+    --button-text: #ffffff;
 }
 
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
 
 /* Dark Mode */
 .dark-mode {
-    background: #0d1117;
-    text-color: #ffffff;
-    button-bg: #ffffff;
-    button-text: #121212;
+    --bg-color: #0d1117;
+    --text-color: #ffffff;
+    --button-bg: #ffffff;
+    --button-text: #121212;
 }
 
 button {

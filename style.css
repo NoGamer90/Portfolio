@@ -6,36 +6,11 @@ font-family:Arial, sans-serif;
 scroll-behavior:smooth;
 }
 
-/* Light Mode (default) */
-:root {
-    --bg-color: #ffffff;
-    --text-color: #222222;
-    --button-bg: #222222;
-    --button-text: #ffffff;
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: #0d1117;
+    color: white;
     font-family: Arial, sans-serif;
     transition: background-color 0.1s, color 0.1s;
-}
-
-/* Dark Mode */
-.dark-mode {
-    --bg-color: #0d1117;
-    --text-color: #ffffff;
-    --button-bg: #ffffff;
-    --button-text: #121212;
-}
-
-button {
-    background: var(--button-bg);
-    color: var(--button-text);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 header{

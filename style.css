@@ -12,7 +12,9 @@ body {
     font-family: Arial, sans-serif;
     transition: background-color 0.1s, color 0.1s;
 }
-
+p{
+    color: pink;
+}
 header{
 display:flex;
 justify-content:space-between;
@@ -31,7 +33,7 @@ color:#00d4ff;
 }
 
 nav a{
-color:white;
+color:pink;
 text-decoration:none;
 margin-left:20px;
 transition:.3s;

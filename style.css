@@ -12,6 +12,32 @@ color:white;
 line-height:1.6;
 }
 
+/* Light Mode (default) */
+:root {
+    background: #ffffff;
+    color: #222222;
+    button-bg: #222222;
+    button-text: #ffffff;
+}
+
+
+/* Dark Mode */
+.dark-mode {
+    background: #0d1117;
+    text-color: #ffffff;
+    button-bg: #ffffff;
+    button-text: #121212;
+}
+
+button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 header{
 display:flex;
 justify-content:space-between;

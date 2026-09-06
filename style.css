@@ -16,11 +16,11 @@ p{
     color: pink;
 }
 :root {
-    --bg-color: white;
+    --bg-color: #0d1117;
 }
 
-.dark-mode {
-    --bg-color: #0d1117;
+.light-mode {
+    --bg-color: white;
 }
 
 header{
